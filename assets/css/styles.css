@@ -1,0 +1,197 @@
+body {
+    background-color: rgb(82, 86, 89);
+}
+
+/* font */
+@font-face {
+    font-family: fontChuKy;
+    src:url(./font/HoneymoonAvenue.ttf),
+}
+
+
+canvas, .canvas-container {
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.toolbar {
+    width: 100%;
+    background-color: rgba(10, 10, 10, 0.452);
+    height: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    box-shadow: 2px 2px 10px rgb(253, 253, 253);
+}
+
+#pdf-container {
+    margin-top: 60px;
+    padding-left: 10px;
+    text-align: center;
+}
+
+button:focus {
+    outline: 0;
+}
+
+.title-toolbar{
+    color: #FFD503;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.685);
+    font-weight: bold;
+    font-size: 18px;
+    font-family: 'Satisfy', cursive;
+}
+
+.toolbar .tool {
+    display: inline-block;
+    color: #fff;
+    height: 100%;
+    padding-top: 10px;
+    padding-left: 10px;
+    margin-right: 5px;
+}
+
+.toolbar .tool label,
+.toolbar .tool select,
+.toolbar .tool input {
+    display: inline-block;
+    width: auto;
+    height: auto !important;
+    padding: 0;
+
+}
+
+.toolbar .tool input {
+    width: 40px;
+    font-weight: bold;;
+    cursor: pointer;
+}
+.toolbar .tool #font-size {
+    width: 55px;
+    height: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.toolbar .tool .color-tool {
+    height: 20px;
+    width: 20px;
+    border-radius: 50px;
+    border: 0;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.toolbar .tool .color-tool:hover {
+    border: 2px solid rgb(233, 230, 230);
+    transition: 1ms;
+}
+
+.toolbar .tool .color-tool.active {
+    -webkit-box-shadow: 2px 2px 2px rgba(255, 255, 255, 0.75);
+    -moz-box-shadow: 2px 2px 2px rgba(255, 255, 255, 0.75);
+    box-shadow: 2px 2px 2px rgba(255, 255, 255, 0.75);
+    border: 2px solid rgb(233, 230, 230);
+}
+
+.toolbar .tool:nth-last-child(1) {
+    float: right;
+}
+
+.toolbar .tool .tool-button {
+    background-color: rgb(50, 54, 57);
+    border: 1px solid rgb(50, 54, 57);
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.toolbar .tool .tool-button:hover,
+.toolbar .tool .tool-button.active {
+    background-color: rgb(82, 86, 89);
+    border-color: rgb(82, 86, 89);
+}
+
+/* Dropdown Color */
+.dropbtn:focus {
+    outline: none;
+}
+/* .dropbtn {
+    border-radius: 5px;
+    color: rgba(8, 8, 8, 0.719);
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    background-color: #3e8e41;
+    background-image: linear-gradient(
+            to right,
+            #009245,
+            #fcee21,
+            #00a8c5,
+            #d9e021
+            );
+    box-shadow: 0 4px 5px 0 rgba(83, 176, 57, 0.75);
+  } */
+
+  .tool .dropdown .dropbtn {
+    background-color: rgb(50, 54, 57);
+    /* border: 1px solid rgb(50, 54, 57); */
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  .tool .dropdown .dropbtn:hover{
+    background-color: rgb(82, 86, 89);
+    border-color: rgb(82, 86, 89);
+
+  }
+
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(10, 10, 10, 0.452);
+    min-width: 130px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    padding: 5px;
+  }
+  
+  /* .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  } */
+  
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* .dropdown:hover .dropbtn {
+    background-color: #ffffff;
+  } */
+/* Responsive */
+/* @media screen and (max-width: 800px) {
+    .toolbar {
+        width: 50%;
+        background-color: rgba(10, 10, 10, 0.452);
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        box-shadow: 2px 2px 10px rgb(253, 253, 253);
+    }
+  } */
+
